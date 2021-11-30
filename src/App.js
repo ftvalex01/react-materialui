@@ -2,9 +2,9 @@ import React from "react";
 import Button from '@mui/material/Button'
 import SendIcon from '@mui/icons-material/Send'
 import Stack from '@mui/material/Stack';
-
-
-
+import Delete from "@mui/icons-material/Delete";
+import { Icon } from "@mui/material";
+import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 
 function App() {
   return (
@@ -23,6 +23,15 @@ function App() {
       Soy el full
       </Button>
       </Stack>
+      <Stack spacing={2}>
+       <Delete>
+         hola
+       </Delete>
+       <Icon>
+       login
+       </Icon>
+       <AccessAlarmIcon></AccessAlarmIcon>
+       </Stack>
     </div>
   );
 }
