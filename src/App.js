@@ -7,6 +7,8 @@ import { Icon } from "@mui/material";
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 import { Typography } from "@mui/material";
 import Estilos from "./Estilos";
+import Global from "./Global";
+
 
 function App() {
   return (
@@ -48,7 +50,8 @@ function App() {
 
        <br/>
        <Estilos></Estilos>
-       
+       <br/>
+       <Global></Global>
     </div>
   );
 }
