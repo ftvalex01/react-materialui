@@ -5,6 +5,8 @@ import Stack from '@mui/material/Stack';
 import Delete from "@mui/icons-material/Delete";
 import { Icon } from "@mui/material";
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+import { Typography } from "@mui/material";
+
 
 function App() {
   return (
@@ -31,6 +33,17 @@ function App() {
        login
        </Icon>
        <AccessAlarmIcon></AccessAlarmIcon>
+       </Stack>
+       <Stack spacing={2}>
+       <Typography variant ="h3" align="right" color="primary">
+        Hola soy el texto del typhograpy
+       </Typography>
+       <Typography paragraph>
+        hola soy el texto del typhograpy2
+       </Typography>
+       <Typography gutterBottom>
+        hola soy el texto del typhograpy2
+       </Typography>
        </Stack>
     </div>
   );
