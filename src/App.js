@@ -6,7 +6,7 @@ import Delete from "@mui/icons-material/Delete";
 import { Icon } from "@mui/material";
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 import { Typography } from "@mui/material";
-
+import Estilos from "./Estilos";
 
 function App() {
   return (
@@ -45,6 +45,10 @@ function App() {
         hola soy el texto del typhograpy2
        </Typography>
        </Stack>
+
+       <br/>
+       <Estilos></Estilos>
+       
     </div>
   );
 }
