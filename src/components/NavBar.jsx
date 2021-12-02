@@ -9,41 +9,51 @@ import { IconButton, Button } from '@mui/material'
 
 
 const useStyles = makeStyles(theme => ({
-  offset: theme.mixins.toolbar,
-  menuButton:{
-    marginRight:theme.spacing(2),
-  },
-  title:{
-    flexGrow: 1
-  }
+    menuButton: {
+        marginRight: theme.spacing(2),
+        [theme.breakpoints.up('sm')]: {
+            display: 'none',
+        },
+    },
+    title: {
+        flexGrow: 1
 
+    },
+    appBar: {
+        [theme.breakpoints.up('sm')]: {
+            width: `calc(100% - ${240}px)`,
+            paddingLeft: 240,
+        },
+    },
 }))
 
+const NavBar = (props) => {
 
-
-
-const NavBar = () => {
-
-  const classes = useStyles()
+    const classes = useStyles()
 
     return (
-        <div>
-            <AppBar position="fixed" color="primary">
-              <Toolbar>
-              <IconButton color="inherit" aria-label="menu">
-                <MenuIcon className={classes.menuButton}/>
-              </IconButton>
-                <Typography variant="h6" className={classes.title}>
-                  AlexWeb
+    
+        <AppBar className={classes.appBar}>
+            <Toolbar>
+                <IconButton
+                    color="inherit"
+                    aria-label="menu"
+                    className={classes.menuButton}
+                    onClick={() => props.accionAbrir()}
+                >
+                    <MenuIcon />
+                </IconButton>
+                <Typography variant='h6' className={classes.title}>
+                    AlexWeb
                 </Typography>
                 <Button variant="text" color="inherit">
-                  login
+                    Login
                 </Button>
-              </Toolbar>
-            </AppBar>
-            <div className={classes.offset}></div>
-        </div>
+            </Toolbar>
+        </AppBar>
     )
 }
 
 export default NavBar
+
+

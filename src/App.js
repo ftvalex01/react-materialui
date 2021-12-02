@@ -1,11 +1,8 @@
 /* eslint-disable no-lone-blocks */
 import React from "react";
-import Button from '@mui/material/Button'
-import NavBar from "./components/NavBar";
 import { ThemeProvider} from '@mui/material'
 import theme from "./temaConfig";
-import Lista from "./components/Lista";
-import Oculto from "./components/Oculto";
+import Contenedor from "./components/Contenedor";
 
 
 
@@ -13,7 +10,21 @@ function App() {
   return (
     <div className="App">
     <ThemeProvider theme={theme}>
-      <NavBar/>
+
+      <Contenedor/>
+
+    </ThemeProvider>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+ {/* <NavBar/>
             <Button variant="contained" color="primary">
               boton
             </Button>
@@ -21,14 +32,7 @@ function App() {
               boton
             </Button>
             <Lista></Lista>
-            <Oculto></Oculto>
-        </ThemeProvider>
-    </div>
-  );
-}
-
-export default App;
-
+            <Oculto></Oculto> */}
 
 
 /* import SendIcon from '@mui/icons-material/Send'
@@ -39,7 +43,10 @@ import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 import Estilos from "./Estilos";
 import Global from "./Global";  */
 
-
+/* import Lista from "./components/Lista";
+import Button from '@mui/material/Button'
+import NavBar from "./components/NavBar";
+import Oculto from "./components/Oculto"; */
 
 
 
