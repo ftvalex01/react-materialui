@@ -1,19 +1,51 @@
+/* eslint-disable no-lone-blocks */
 import React from "react";
 import Button from '@mui/material/Button'
-import SendIcon from '@mui/icons-material/Send'
-import Stack from '@mui/material/Stack';
-import Delete from "@mui/icons-material/Delete";
-import { Icon } from "@mui/material";
-import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
-import { Typography } from "@mui/material";
-import Estilos from "./Estilos";
-import Global from "./Global";
+import NavBar from "./components/NavBar";
+import { ThemeProvider, Typography } from '@mui/material'
+import theme from "./temaConfig";
+
+
+
 
 
 function App() {
   return (
     <div className="App">
-     <Stack spacing={2} direction="row">
+    <ThemeProvider theme={theme}>
+      <NavBar/>
+            <Button variant="contained" color="primary">
+              boton
+            </Button>
+            <Button variant="contained" color="secondary">
+              boton
+            </Button>
+            <Typography>
+            esto es un lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vero similique , molestim dolor et ipsulum per tuti la cuore del mio cuore , y leesin en la jungla esta op y se tenia que decir.
+            </Typography>
+        </ThemeProvider>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+/* import SendIcon from '@mui/icons-material/Send'
+import Stack from '@mui/material/Stack';
+import Delete from "@mui/icons-material/Delete";
+import { Icon } from "@mui/material";
+import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+import Estilos from "./Estilos";
+import Global from "./Global";  */
+
+
+
+
+
+
+ {/*   <Stack spacing={2} direction="row">
       <Button variant="contained" color="success"  >
       Hello World
       </Button>
@@ -51,9 +83,4 @@ function App() {
        <br/>
        <Estilos></Estilos>
        <br/>
-       <Global></Global>
-    </div>
-  );
-}
-
-export default App;
+       <Global></Global> */}
