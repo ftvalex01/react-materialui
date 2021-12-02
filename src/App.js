@@ -2,9 +2,9 @@
 import React from "react";
 import Button from '@mui/material/Button'
 import NavBar from "./components/NavBar";
-import { ThemeProvider, Typography } from '@mui/material'
+import { ThemeProvider} from '@mui/material'
 import theme from "./temaConfig";
-
+import Lista from "./components/Lista";
 
 
 
@@ -20,9 +20,9 @@ function App() {
             <Button variant="contained" color="secondary">
               boton
             </Button>
-            <Typography>
-            esto es un lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vero similique , molestim dolor et ipsulum per tuti la cuore del mio cuore , y leesin en la jungla esta op y se tenia que decir.
-            </Typography>
+            <Lista>
+
+            </Lista>
         </ThemeProvider>
     </div>
   );
