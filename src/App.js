@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import { ThemeProvider} from '@mui/material'
 import theme from "./temaConfig";
 import Lista from "./components/Lista";
-
+import Oculto from "./components/Oculto";
 
 
 
@@ -20,9 +20,8 @@ function App() {
             <Button variant="contained" color="secondary">
               boton
             </Button>
-            <Lista>
-
-            </Lista>
+            <Lista></Lista>
+            <Oculto></Oculto>
         </ThemeProvider>
     </div>
   );
